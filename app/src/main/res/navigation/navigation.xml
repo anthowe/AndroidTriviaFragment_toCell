@@ -21,10 +21,18 @@
         android:id="@+id/attFragment"
         android:name="com.example.android.navigation.ATTFragment"
         android:label="fragment_att"
-        tools:layout="@layout/fragment_att" />
+        tools:layout="@layout/fragment_att" >
+        <action
+            android:id="@+id/action_attFragment_to_titleFragment"
+            app:destination="@id/titleFragment" />
+    </fragment>
     <fragment
         android:id="@+id/verizonFragment"
         android:name="com.example.android.navigation.VerizonFragment"
         android:label="fragment_verizon"
-        tools:layout="@layout/fragment_verizon" />
+        tools:layout="@layout/fragment_verizon" >
+        <action
+            android:id="@+id/action_verizonFragment_to_titleFragment"
+            app:destination="@id/titleFragment" />
+    </fragment>
 </navigation>

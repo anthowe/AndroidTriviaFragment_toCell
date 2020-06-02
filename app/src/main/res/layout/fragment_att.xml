@@ -33,7 +33,7 @@
             android:layout_marginEnd="@dimen/horizontal_margin"
             android:layout_marginBottom="8dp"
             android:scaleType="fitCenter"
-            app:layout_constraintBottom_toTopOf="@+id/tryAgainButton"
+            app:layout_constraintBottom_toTopOf="@+id/backButton"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -41,7 +41,7 @@
             app:srcCompat="@drawable/att" />
 
         <Button
-            android:id="@+id/tryAgainButton"
+            android:id="@+id/backButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/vertical_margin"
@@ -50,13 +50,14 @@
             android:layout_marginBottom="8dp"
             android:paddingStart="@dimen/button_padding"
             android:paddingEnd="@dimen/button_padding"
-            android:text="@string/try_again"
+            android:text="@string/back_button"
             android:textColor="?colorAccent"
             android:textSize="@dimen/button_text_size"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/attFragment" />
+            app:layout_constraintTop_toBottomOf="@+id/attFragment"
+           />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

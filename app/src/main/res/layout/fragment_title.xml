@@ -32,7 +32,7 @@
             android:layout_height="@dimen/image_header_height"
             android:layout_marginBottom="209dp"
             android:contentDescription="@string/navigatetoatt"
-            android:scaleType="fitCenter"
+            android:scaleType="center"
             app:layout_constraintBottom_toTopOf="@+id/verizonImage"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"

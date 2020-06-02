@@ -22,6 +22,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
+import androidx.navigation.findNavController
+import androidx.navigation.fragment.findNavController
 import com.example.android.navigation.databinding.FragmentVerizonBinding
 
 
@@ -31,6 +33,10 @@ class VerizonFragment : Fragment() {
         // Inflate the layout for this fragment
         val binding: FragmentVerizonBinding = DataBindingUtil.inflate(
                 inflater, R.layout.fragment_verizon, container, false)
+
+        binding.backButton.setOnClickListener { view: View ->
+           view.findNavController().navigate(R.id.action_verizonFragment_to_titleFragment)
+        }
         return binding.root
     }
 }

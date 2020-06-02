@@ -22,6 +22,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
+import androidx.navigation.findNavController
+import com.example.android.navigation.R.layout.fragment_att
 import com.example.android.navigation.databinding.FragmentAttBinding
 
 class ATTFragment : Fragment() {
@@ -29,7 +31,16 @@ class ATTFragment : Fragment() {
                               savedInstanceState: Bundle?): View? {
         // Inflate the layout for this fragment
         val binding: FragmentAttBinding = DataBindingUtil.inflate(
-                inflater, R.layout.fragment_att, container, false)
+                inflater, fragment_att, container, false)
+
+        binding.backButton.setOnClickListener { view: View ->
+            view.findNavController().navigate(R.id.action_attFragment_to_titleFragment)
+        }
         return binding.root
+
+
     }
+
+
 }
+
