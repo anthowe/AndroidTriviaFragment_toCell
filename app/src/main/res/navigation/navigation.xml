@@ -11,11 +11,11 @@
         android:label="fragment_title"
         tools:layout="@layout/fragment_title" >
         <action
-            android:id="@+id/action_titleFragment_to_attFragment"
-            app:destination="@id/attFragment" />
-        <action
             android:id="@+id/action_titleFragment_to_verizonFragment"
             app:destination="@id/verizonFragment" />
+        <action
+            android:id="@+id/action_titleFragment_to_attFragment"
+            app:destination="@id/attFragment" />
     </fragment>
     <fragment
         android:id="@+id/attFragment"
@@ -23,8 +23,8 @@
         android:label="fragment_att"
         tools:layout="@layout/fragment_att" >
         <action
-            android:id="@+id/action_attFragment_to_titleFragment"
-            app:destination="@id/titleFragment" />
+            android:id="@+id/action_attFragment_to_arrayActivity"
+            app:destination="@id/arrayActivity" />
     </fragment>
     <fragment
         android:id="@+id/verizonFragment"
@@ -35,4 +35,9 @@
             android:id="@+id/action_verizonFragment_to_titleFragment"
             app:destination="@id/titleFragment" />
     </fragment>
+    <activity
+        android:id="@+id/arrayActivity"
+        android:name="com.example.android.navigation.ArrayActivity"
+        android:label="fragment_array_activity"
+        tools:layout="@layout/fragment_array_activity" />
 </navigation>

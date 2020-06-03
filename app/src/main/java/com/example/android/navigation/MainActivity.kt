@@ -17,6 +17,8 @@
 package com.example.android.navigation
 
 import android.os.Bundle
+import android.widget.ArrayAdapter
+import android.widget.Spinner
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import com.example.android.navigation.databinding.ActivityMainBinding

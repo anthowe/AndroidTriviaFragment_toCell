@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="pick_carrier">
+        <item>ATT</item>
+        <item>Verizon</item>
+        <item>Page Plus</item>
+        <item>Lyca</item>
+        <item>Air Voice</item>
+        <item>Tracfone</item>
+
+
+    </string-array>
+</resources>

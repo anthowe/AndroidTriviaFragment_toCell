@@ -20,6 +20,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
@@ -34,7 +35,7 @@ class ATTFragment : Fragment() {
                 inflater, fragment_att, container, false)
 
         binding.backButton.setOnClickListener { view: View ->
-            view.findNavController().navigate(R.id.action_attFragment_to_titleFragment)
+            view.findNavController().navigate(R.id.action_attFragment_to_arrayActivity)
         }
         return binding.root
 

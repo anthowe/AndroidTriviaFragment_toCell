@@ -20,16 +20,6 @@
     <string name="back_button">Back</string>
     <string name="submit_button">Submit</string>
 
-    <string-array name="pick_carrier">
-        <item>ATT</item>
-        <item>Verizon</item>
-        <item>Page Plus</item>
-        <item>Lyca</item>
-        <item>Air Voice</item>
-        <item>Tracfone</item>
-
-
-    </string-array>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

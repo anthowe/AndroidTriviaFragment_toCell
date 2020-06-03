@@ -22,6 +22,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ArrayAdapter
+import android.widget.Spinner
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.findNavController
 import com.example.android.navigation.databinding.FragmentTitleBinding
@@ -49,11 +51,12 @@ class TitleFragment : Fragment() {
             binding.verizonImage.setOnClickListener{viewVerizon : View ->
                 viewVerizon.findNavController().navigate(R.id.action_titleFragment_to_verizonFragment)
             }
-            
+
 
 
         return binding.root
     }
+
 
 
 }
