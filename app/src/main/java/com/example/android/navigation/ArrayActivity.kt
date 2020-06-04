@@ -1,7 +1,9 @@
 package com.example.android.navigation
 
+import android.content.Context
 import android.os.Bundle
 import android.os.PersistableBundle
+import android.util.AttributeSet
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -16,8 +18,10 @@ import androidx.appcompat.app.AppCompatActivity
  */
 class ArrayActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener{
 
-    override fun onCreate(savedInstanceState: Bundle?, persistentState: PersistableBundle?) {
-        super.onCreate(savedInstanceState, persistentState)
+    override fun onCreateView(name: String?, context: Context?, attrs: AttributeSet?): View? {
+
+        setContentView(R.layout.fragment_array_activity)
+
         val spinner: Spinner = findViewById(R.id.spinner)
         ArrayAdapter.createFromResource(this, R.array.pick_carrier, android.R.layout.simple_spinner_item).also { adapter ->
             // Specify the layout to use when the list of choices appears
@@ -27,7 +31,7 @@ class ArrayActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener{
         }
 
         print("onCreate")
-
+        return super.onCreateView(name, context, attrs)
     }
 
     override fun onNothingSelected(p0: AdapterView<*>?) {

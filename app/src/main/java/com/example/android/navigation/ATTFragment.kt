@@ -35,7 +35,7 @@ class ATTFragment : Fragment() {
                 inflater, fragment_att, container, false)
 
         binding.backButton.setOnClickListener { view: View ->
-            view.findNavController().navigate(R.id.action_attFragment_to_arrayActivity)
+            view.findNavController().navigate(R.id.action_attFragment_to_titleFragment)
         }
         return binding.root
 

@@ -17,20 +17,45 @@
 package com.example.android.navigation
 
 import android.os.Bundle
+import android.view.View
+import android.widget.AdapterView
 import android.widget.ArrayAdapter
+import android.widget.LinearLayout
 import android.widget.Spinner
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import com.example.android.navigation.databinding.ActivityMainBinding
+import timber.log.Timber
 
-class MainActivity : AppCompatActivity() {
+
+class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
     override fun onCreate(savedInstanceState: Bundle?) {
+
         super.onCreate(savedInstanceState)
         @Suppress("UNUSED_VARIABLE")
         val binding = DataBindingUtil.setContentView<ActivityMainBinding>(this, R.layout.activity_main)
 
+        val spinner: Spinner = findViewById(R.id.spinner)
+        ArrayAdapter.createFromResource(this, R.array.pick_carrier, android.R.layout.simple_spinner_item).also { adapter ->
+            // Specify the layout to use when the list of choices appears
+            adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+            // Apply the adapter to the spinner
+            spinner.adapter = adapter
+        }
 
     }
+
+    override fun onNothingSelected(p0: AdapterView<*>?) {
+
+    }
+
+    override fun onItemSelected(p0: AdapterView<*>?, p1: View?, p2: Int, p3: Long) {
+        val spinner: Spinner = findViewById(R.id.spinner)
+        spinner.onItemSelectedListener = this
+       
+    }
+
+
 
     // TODO (01) Create the new TitleFragment
     // Select File->New->Fragment->Fragment (Blank)

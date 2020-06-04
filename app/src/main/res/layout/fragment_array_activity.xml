@@ -10,14 +10,15 @@
     <Spinner
         android:id="@+id/spinner"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
         android:layout_marginTop="100dp"
         android:layout_marginEnd="50dp"
         android:layout_marginBottom="100dp"
         android:background="@drawable/ic_launcher_foreground"
-        android:entries="@array/pick_carrier"
+        android:padding="8dp"
         android:textAlignment="center"
+        android:textColor="#000000"
         android:visibility="visible"
         tools:visibility="visible" />
 

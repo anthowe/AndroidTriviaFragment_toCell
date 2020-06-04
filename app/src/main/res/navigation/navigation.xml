@@ -23,8 +23,8 @@
         android:label="fragment_att"
         tools:layout="@layout/fragment_att" >
         <action
-            android:id="@+id/action_attFragment_to_arrayActivity"
-            app:destination="@id/arrayActivity" />
+            android:id="@+id/action_attFragment_to_titleFragment"
+            app:destination="@id/titleFragment" />
     </fragment>
     <fragment
         android:id="@+id/verizonFragment"
