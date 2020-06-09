@@ -22,6 +22,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
+import androidx.viewbinding.BuildConfig
 import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
 import com.example.android.navigation.R.layout.fragment_att
@@ -36,7 +37,11 @@ class ATTFragment : Fragment() {
 
         binding.backButton.setOnClickListener { view: View ->
             view.findNavController().navigate(R.id.action_attFragment_to_titleFragment)
+
         }
+        binding.buybutton.setOnClickListener {view: View ->
+        view.findNavController().navigate(R.id.action_attImage_to_att_Buy)}
+
         return binding.root
 
 

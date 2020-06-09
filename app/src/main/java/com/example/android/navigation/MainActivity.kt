@@ -23,37 +23,57 @@ import android.widget.ArrayAdapter
 import android.widget.LinearLayout
 import android.widget.Spinner
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.WindowDecorActionBar
 import androidx.databinding.DataBindingUtil
 import com.example.android.navigation.databinding.ActivityMainBinding
 import timber.log.Timber
 
 
-class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
+class MainActivity : AppCompatActivity(){
     override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
+        Timber.plant(Timber.DebugTree())
+        Timber.i("onCreate called")
         @Suppress("UNUSED_VARIABLE")
         val binding = DataBindingUtil.setContentView<ActivityMainBinding>(this, R.layout.activity_main)
 
-        val spinner: Spinner = findViewById(R.id.spinner)
-        ArrayAdapter.createFromResource(this, R.array.pick_carrier, android.R.layout.simple_spinner_item).also { adapter ->
-            // Specify the layout to use when the list of choices appears
-            adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
-            // Apply the adapter to the spinner
-            spinner.adapter = adapter
+
         }
 
+    override fun onStart() {
+        super.onStart()
+        Timber.i("onStart called")
+    }
+    override fun onResume() {
+        super.onResume()
+        Timber.i("onResume Called")
     }
 
-    override fun onNothingSelected(p0: AdapterView<*>?) {
-
+    override fun onPause() {
+        super.onPause()
+        Timber.i("onPause Called")
     }
 
-    override fun onItemSelected(p0: AdapterView<*>?, p1: View?, p2: Int, p3: Long) {
-        val spinner: Spinner = findViewById(R.id.spinner)
-        spinner.onItemSelectedListener = this
-       
+    override fun onStop() {
+        super.onStop()
+        Timber.i("onStop Called")
     }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        Timber.i("onDestroy Called")
+    }
+
+    override fun onRestart() {
+        super.onRestart()
+        Timber.i("onRestart Called")
+    }
+    }
+
+
+
+
 
 
 
@@ -66,4 +86,4 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
     // TODO (03) Use DataBindingUtil.inflate to inflate and return the titleFragment in onCreateView
     // In our new TitleFragment
     // R.layout.fragment_title
-}
+

@@ -15,16 +15,19 @@
             app:destination="@id/verizonFragment" />
         <action
             android:id="@+id/action_titleFragment_to_attFragment"
-            app:destination="@id/attFragment" />
+            app:destination="@id/attImage" />
     </fragment>
     <fragment
-        android:id="@+id/attFragment"
+        android:id="@+id/attImage"
         android:name="com.example.android.navigation.ATTFragment"
         android:label="fragment_att"
         tools:layout="@layout/fragment_att" >
         <action
             android:id="@+id/action_attFragment_to_titleFragment"
             app:destination="@id/titleFragment" />
+        <action
+            android:id="@+id/action_attImage_to_att_Buy"
+            app:destination="@id/att_Buy" />
     </fragment>
     <fragment
         android:id="@+id/verizonFragment"
@@ -35,9 +38,18 @@
             android:id="@+id/action_verizonFragment_to_titleFragment"
             app:destination="@id/titleFragment" />
     </fragment>
-    <activity
-        android:id="@+id/arrayActivity"
-        android:name="com.example.android.navigation.ArrayActivity"
-        android:label="fragment_array_activity"
-        tools:layout="@layout/fragment_array_activity" />
+    <fragment
+        android:id="@+id/att_Buy"
+        android:name="com.example.android.navigation.Att_Buy"
+        android:label="fragment_att_buy"
+        tools:layout="@layout/fragment_att_buy" >
+        <action
+            android:id="@+id/action_att_Buy_to_blankFragment"
+            app:destination="@id/blankFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/blankFragment"
+        android:name="com.example.android.navigation.BlankFragment"
+        android:label="fragment_blank"
+        tools:layout="@layout/fragment_blank" />
 </navigation>
