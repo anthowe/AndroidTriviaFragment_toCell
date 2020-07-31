@@ -26,8 +26,8 @@
             android:id="@+id/action_attFragment_to_titleFragment"
             app:destination="@id/titleFragment" />
         <action
-            android:id="@+id/action_attImage_to_att_Buy"
-            app:destination="@id/att_Buy" />
+            android:id="@+id/action_attImage_to_blankFragment"
+            app:destination="@id/blankFragment" />
     </fragment>
     <fragment
         android:id="@+id/verizonFragment"
@@ -39,17 +39,17 @@
             app:destination="@id/titleFragment" />
     </fragment>
     <fragment
-        android:id="@+id/att_Buy"
-        android:name="com.example.android.navigation.Att_Buy"
-        android:label="fragment_att_buy"
-        tools:layout="@layout/fragment_att_buy" >
-        <action
-            android:id="@+id/action_att_Buy_to_blankFragment"
-            app:destination="@id/blankFragment" />
-    </fragment>
-    <fragment
         android:id="@+id/blankFragment"
         android:name="com.example.android.navigation.BlankFragment"
         android:label="fragment_blank"
-        tools:layout="@layout/fragment_blank" />
+        tools:layout="@layout/fragment_blank" >
+        <action
+            android:id="@+id/action_blankFragment_to_blankFragment2"
+            app:destination="@id/blankFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/blankFragment2"
+        android:name="com.example.android.navigation.BlankFragment2"
+        android:label="fragment_blank2"
+        tools:layout="@layout/fragment_blank2" />
 </navigation>

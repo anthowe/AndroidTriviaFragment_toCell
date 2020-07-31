@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "385822483388",
+    "firebase_url": "https://cellprojectandroid.firebaseio.com",
+    "project_id": "cellprojectandroid",
+    "storage_bucket": "cellprojectandroid.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:385822483388:android:f09c34dbbf52b0c73001b9",
+        "android_client_info": {
+          "package_name": "com.example.android.navigation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "385822483388-rcjv1medb8ejernhp4a0oj649j8fk4tm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVhuY8RPWPjbcQq4x0UjRTFeOVW8KQ0eE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "385822483388-rcjv1medb8ejernhp4a0oj649j8fk4tm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -24,7 +24,7 @@
                                 <LayoutPositions />
                               </value>
                             </entry>
-                            <entry key="action_attImage_to_att_Buy">
+                            <entry key="action_attImage_to_blankFragment">
                               <value>
                                 <LayoutPositions />
                               </value>
@@ -34,25 +34,25 @@
                       </LayoutPositions>
                     </value>
                   </entry>
-                  <entry key="att_Buy">
+                  <entry key="blankFragment">
                     <value>
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="813" />
+                            <option name="x" value="722" />
                             <option name="y" value="-61" />
                           </Point>
                         </option>
                       </LayoutPositions>
                     </value>
                   </entry>
-                  <entry key="blankFragment">
+                  <entry key="blankFragment2">
                     <value>
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="1072" />
-                            <option name="y" value="-55" />
+                            <option name="x" value="908" />
+                            <option name="y" value="-60" />
                           </Point>
                         </option>
                       </LayoutPositions>

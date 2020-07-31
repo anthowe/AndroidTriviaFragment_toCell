@@ -25,4 +25,32 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="navigatetoatt">navigateToATT</string>
     <string name="navigatetoverizon">navigateToVerizon</string>
+    <string name="why_pay_more"> Why pay more for your prepaid
+    cellular refills than you need? 
+    Great savings of up to 19% on
+    Access Wireless -Airvoice -ATT-
+    Lyca Mobile -Net10 -Page Plus -
+    Ready Mobile - T Mobile - Verizon 
+    Start saving on your prepaid
+    cellular refills</string>
+
+    ​
+    ​ <string name="our_purpose">     Our sole purpose is to offer the cheapest
+      prepaid cellular refills, not to look pretty or
+      twist your arm to purchase our products.</string>
+    ​
+  <string name="for_example">    For example, you could be
+    paying $54.15 for a $50 ATT
+    refill, including 911 and sales 
+    tax fees: our discounted price
+    is $44.50, that is an 18%
+    savings!</string>
+
+
+    ​
+    ​
+    ​
+    ​
+     
+    ​
 </resources>

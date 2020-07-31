@@ -40,7 +40,7 @@ class ATTFragment : Fragment() {
 
         }
         binding.buybutton.setOnClickListener {view: View ->
-        view.findNavController().navigate(R.id.action_attImage_to_att_Buy)}
+        view.findNavController().navigate(R.id.action_attImage_to_blankFragment)}
 
         return binding.root
 
