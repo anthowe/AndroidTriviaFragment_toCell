@@ -16,6 +16,7 @@
 
 package com.example.android.navigation
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -25,6 +26,7 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.findNavController
 import com.example.android.navigation.databinding.FragmentVerizonBinding
+import kotlinx.android.synthetic.main.fragment_verizon.*
 
 
 class VerizonFragment : Fragment() {
@@ -38,5 +40,12 @@ class VerizonFragment : Fragment() {
            view.findNavController().navigate(R.id.action_verizonFragment_to_titleFragment)
         }
         return binding.root
+    }
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        backButton.setOnClickListener { view: View ->
+        view.findNavController().navigate(R.id.action_verizonFragment_to_titleFragment)
+        }
     }
 }

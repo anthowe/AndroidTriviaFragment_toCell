@@ -35,16 +35,32 @@
     cellular refills</string>
 
     ​
-    ​ <string name="our_purpose">     Our sole purpose is to offer the cheapest
+    ​
+    <string name="our_purpose">     Our sole purpose is to offer the cheapest
       prepaid cellular refills, not to look pretty or
       twist your arm to purchase our products.</string>
     ​
-  <string name="for_example">    For example, you could be
+    <string name="for_example">    For example, you could be
     paying $54.15 for a $50 ATT
     refill, including 911 and sales 
     tax fees: our discounted price
     is $44.50, that is an 18%
     savings!</string>
+    <string name="title_activity_welcome">WelcomeActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="welcome">Welcome to our app</string>
+    <string name="login_register_text">Please Login or Register to Begin</string>
+    <string name="login_text">Login</string>
+    <string name="register_text">Register</string>
+    <string name="signup">Signup</string>
+    <string name="please_enter_email">Please enter email</string>
 
 
     ​
