@@ -61,6 +61,11 @@
     <string name="register_text">Register</string>
     <string name="signup">Signup</string>
     <string name="please_enter_email">Please enter email</string>
+    <string name="fill_in_signup">Fill in information below</string>
+    <string name="please_reenter_email">Please reenter email</string>
+    <string name="register">Register</string>
+    <string name="please_enter_password">Please enter password</string>
+    <string name="please_reenter_password">Please reenter password</string>
 
 
     ​

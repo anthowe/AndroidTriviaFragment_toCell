@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/titleFragment"
-        android:name="com.example.android.navigation.TitleFragment"
+        android:name="com.example.android.navigation.ui.welcome.TitleFragment"
         android:label="fragment_title"
         tools:layout="@layout/fragment_title" >
         <action
@@ -15,11 +15,11 @@
             app:destination="@id/verizonFragment" />
         <action
             android:id="@+id/action_titleFragment_to_attFragment"
-            app:destination="@id/attImage" />
+            app:destination="@id/attFragment" />
     </fragment>
     <fragment
-        android:id="@+id/attImage"
-        android:name="com.example.android.navigation.ATTFragment"
+        android:id="@+id/attFragment"
+        android:name="com.example.android.navigation.products.ATTFragment"
         android:label="fragment_att"
         tools:layout="@layout/fragment_att" >
         <action
@@ -31,7 +31,7 @@
     </fragment>
     <fragment
         android:id="@+id/verizonFragment"
-        android:name="com.example.android.navigation.VerizonFragment"
+        android:name="com.example.android.navigation.products.VerizonFragment"
         android:label="fragment_verizon"
         tools:layout="@layout/fragment_verizon" >
         <action
@@ -40,21 +40,12 @@
     </fragment>
     <fragment
         android:id="@+id/blankFragment"
-        android:name="com.example.android.navigation.BlankFragment"
+        android:name="com.example.android.navigation.products.BlankFragment"
         android:label="fragment_blank"
-        tools:layout="@layout/fragment_blank" >
-        <action
-            android:id="@+id/action_blankFragment_to_blankFragment2"
-            app:destination="@id/blankFragment2" />
-    </fragment>
-    <fragment
-        android:id="@+id/blankFragment2"
-        android:name="com.example.android.navigation.BlankFragment2"
-        android:label="fragment_blank2"
-        tools:layout="@layout/fragment_blank2" />
+        tools:layout="@layout/fragment_blank" />
     <fragment
         android:id="@+id/welcomeFragment"
-        android:name="com.example.android.navigation.WelcomeFragment"
+        android:name="com.example.android.navigation.ui.welcome.WelcomeFragment"
         android:label="fragment_welcome"
         tools:layout="@layout/fragment_welcome" >
         <action
@@ -69,7 +60,7 @@
     </fragment>
     <fragment
         android:id="@+id/signinFragment"
-        android:name="com.example.android.navigation.SigninFragment"
+        android:name="com.example.android.navigation.ui.login.SigninFragment"
         android:label="fragment_signin"
         tools:layout="@layout/fragment_signin" >
         <action
@@ -78,7 +69,7 @@
     </fragment>
     <fragment
         android:id="@+id/signupFragment"
-        android:name="com.example.android.navigation.SignupFragment"
+        android:name="com.example.android.navigation.ui.register.SignupFragment"
         android:label="fragment_signup"
         tools:layout="@layout/fragment_signup" >
         <action
