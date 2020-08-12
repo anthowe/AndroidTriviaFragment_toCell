@@ -60,13 +60,13 @@
             <LayoutPositions>
               <option name="myPositions">
                 <map>
-                  <entry key="attImage">
+                  <entry key="attFragment">
                     <value>
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="431" />
-                            <option name="y" value="-964" />
+                            <option name="x" value="408" />
+                            <option name="y" value="-976" />
                           </Point>
                         </option>
                         <option name="myPositions">
@@ -171,8 +171,8 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="434" />
-                            <option name="y" value="-467" />
+                            <option name="x" value="418" />
+                            <option name="y" value="-569" />
                           </Point>
                         </option>
                         <option name="myPositions">
@@ -192,8 +192,8 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="-596" />
-                            <option name="y" value="-760" />
+                            <option name="x" value="-651" />
+                            <option name="y" value="-754" />
                           </Point>
                         </option>
                         <option name="myPositions">

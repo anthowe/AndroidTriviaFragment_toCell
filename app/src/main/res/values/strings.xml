@@ -67,7 +67,9 @@
     <string name="please_enter_password">Please enter password</string>
     <string name="please_reenter_password">Please reenter password</string>
 
-
+    <string name="error_title">"Oops"</string>
+    <string name="error_message">"Something went wrong! Please try again"</string>
+    <string name="general_positive_button">"OK"</string>
     ​
     ​
     ​
