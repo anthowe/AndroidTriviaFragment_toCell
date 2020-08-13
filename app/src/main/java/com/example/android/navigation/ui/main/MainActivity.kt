@@ -16,57 +16,54 @@
 
 package com.example.android.navigation.ui.main
 
+import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import androidx.databinding.DataBindingUtil
 import com.example.android.navigation.R
-import com.example.android.navigation.databinding.ActivityMainBinding
-import timber.log.Timber
+import com.example.android.navigation.common.onPageChange
+import com.example.android.navigation.ui.main.pager.MainPagerAdapter
+import com.example.android.navigation.ui.welcome.WelcomeActivity
+import kotlinx.android.synthetic.main.activity_main.*
 
 
-class MainActivity : AppCompatActivity(){
+class MainActivity : AppCompatActivity() {
+
+    companion object {
+        fun getLaunchIntent(from: Context) = Intent(from, MainActivity::class.java).apply {
+            addFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK)
+        }
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
-
         super.onCreate(savedInstanceState)
-        Timber.plant(Timber.DebugTree())
-        Timber.i("onCreate called")
-        @Suppress("UNUSED_VARIABLE")
-        val binding = DataBindingUtil.setContentView<ActivityMainBinding>(this, R.layout.activity_main)
+        setContentView(R.layout.activity_main)
 
+        initUi()
+    }
 
+    private fun initUi() {
+        val adapter = MainPagerAdapter(supportFragmentManager)
+       adapter.setPages(listOf(WelcomeActivity()))
+
+        mainPager.adapter = adapter
+        mainPager.offscreenPageLimit = 3
+        bottomNavigation.setOnNavigationItemSelectedListener {
+            switchNavigationTab(it.order)
+            true
         }
 
-    override fun onStart() {
-        super.onStart()
-        Timber.i("onStart called")
-    }
-    override fun onResume() {
-        super.onResume()
-        Timber.i("onResume Called")
+        mainPager.onPageChange { position ->
+            val item = bottomNavigation.menu.getItem(position)
+
+            bottomNavigation.selectedItemId = item.itemId
+        }
+
+       // addJoke.onClick { startActivity(Intent(this, AddJokeActivity::class.java)) }
     }
 
-    override fun onPause() {
-        super.onPause()
-        Timber.i("onPause Called")
-    }
-
-    override fun onStop() {
-        super.onStop()
-        Timber.i("onStop Called")
-    }
-
-    override fun onDestroy() {
-        super.onDestroy()
-        Timber.i("onDestroy Called")
-    }
-
-    override fun onRestart() {
-        super.onRestart()
-        Timber.i("onRestart Called")
-    }
-    }
-
-
+    private fun switchNavigationTab(position: Int) = mainPager.setCurrentItem(position, true)
+}
 
 
 

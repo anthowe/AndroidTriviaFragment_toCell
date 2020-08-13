@@ -45,9 +45,9 @@
         tools:layout="@layout/fragment_blank" />
     <fragment
         android:id="@+id/welcomeFragment"
-        android:name="com.example.android.navigation.ui.welcome.WelcomeFragment"
+        android:name="com.example.android.navigation.ui.welcome.WelcomeActivity"
         android:label="fragment_welcome"
-        tools:layout="@layout/fragment_welcome" >
+        tools:layout="@layout/activity_welcome" >
         <action
             android:id="@+id/action_welcomeFragment_to_titleFragment"
             app:destination="@id/titleFragment" />

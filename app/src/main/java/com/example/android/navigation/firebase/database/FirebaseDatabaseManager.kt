@@ -1,6 +1,7 @@
 package com.example.android.navigation.firebase.database
 
 import android.util.Log
+import com.example.android.navigation.model.Joke
 import com.example.android.navigation.model.User
 import com.google.firebase.database.FirebaseDatabase
 import javax.inject.Inject
@@ -22,6 +23,17 @@ class FirebaseDatabaseManager @Inject constructor(private val database: Firebase
                 .setValue(user)   // 4
     }
 
+    override fun listenToJokes(onResult: (Joke) -> Unit) {
+    }
+
+    override fun addNewJoke(joke: Joke, onResult: (Boolean) -> Unit) {
+    }
+
+    override fun getFavoriteJokes(userId: String, onResult: (List<Joke>) -> Unit) {
+    }
+
+    override fun changeJokeFavoriteStatus(joke: Joke, userId: String) {
+    }
     override fun getProfile(id: String, onResult: (User) -> Unit) {
     }
 

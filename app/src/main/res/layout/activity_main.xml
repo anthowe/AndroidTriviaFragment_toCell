@@ -33,6 +33,19 @@
             app:defaultNavHost="true"
             app:navGraph="@navigation/navigation" />
 
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/mainPager"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+           />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigation"
+            android:layout_width="0dp"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@android:color/white"
+            />
+
     </LinearLayout>
 
 
